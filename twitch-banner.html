@@ -1,0 +1,30 @@
+<head>
+  <title>twitch-banner</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> messages}}
+  </div>
+</body>
+
+<template name="messages">
+  <header>
+    <div class="messages">
+      {{#each messages}}
+        {{> message}}
+      {{/each}}
+    </div>
+    <img src="logo.png"/>
+  </header>
+  {{#if showChat}}
+    <iframe src="https://www.nightdev.com/hosted/obschat/?style=dark&channel={{channel}}" id="chat"></iframe>
+  {{/if}}
+</template>
+
+<template name="message">
+  <div>
+    <strong>{{title}}</strong>
+    {{text}}
+  </div>
+</template>
