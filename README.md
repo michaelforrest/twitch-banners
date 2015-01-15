@@ -4,18 +4,18 @@ This is a little app to let you show messages in your stream on Twitch, like the
 
 ##How to use
 
-First you'll need to install meteor following the instructions here: https://www.meteor.com/install
+1) You'll need to install meteor following the instructions here: https://www.meteor.com/install
 
-Clone this repository to you desktop. You can either download the GitHub app or use command line git. There should be instructions on GitHub on how to do this.
+2) Clone this repository to you desktop. You can either download the GitHub app or use command line git. There should be instructions on GitHub on how to do this.
 
-Then run:
+3) On the command line:
 
 ```
-cd path/to/twitch-banners
-meteor
+> cd path/to/twitch-banners
+> meteor
 ```
 
-Then point your OBS Browser plugin to `http://localhost:3000` and you're in business.
+4) Point your OBS Browser plugin to `http://localhost:3000` and you're in business.
 
 ## To change the text
 Edit the file `twitch-banner.coffee`. It will automatically reload with each save.
